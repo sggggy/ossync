@@ -29,3 +29,9 @@ OSSync是一款开源的、基于inotify机制的阿里云同步上载工具，�
  		
 注：请查看logs目录下的日志文件以了解系统运行状况。
 
+
+SQLite 建表语句 进入文件夹主目录的db子目录中
+
+sqlite create database ossync.db
+
+CREATE TABLE queue(root TEXT,relpath TEXT, bucket TEXT, action TEXT , status TEXT,hashcode TEXT,retries INTEGER)
