@@ -32,6 +32,5 @@ OSSync是一款开源的、基于inotify机制的阿里云同步上载工具，�
 
 SQLite 建表语句 进入文件夹主目录的db子目录中
 
-sqlite3 ossync.db
-
-CREATE TABLE queue(root TEXT,relpath TEXT, bucket TEXT, action TEXT , status TEXT,hashcode TEXT,retries INTEGER)
+```sqlite3 ossync.db```
+```CREATE TABLE queue(root TEXT,relpath TEXT, bucket TEXT, action TEXT , status TEXT,hashcode TEXT,retries INTEGER)```
