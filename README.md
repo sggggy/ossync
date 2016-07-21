@@ -26,14 +26,14 @@ OSSync是一款开源的、基于inotify机制的阿里云同步上载工具，�
  * 在当前目录手动创建必要的文件夹db、logs。
  * 进入db文件夹，创建初始数据库，SQLite 建表语句：
  
-		```sqlite3 ossync.db```
+		sqlite3 ossync.db
 
-		```CREATE TABLE queue(root TEXT,relpath TEXT, bucket TEXT, action TEXT , status TEXT,hashcode TEXT,retries INTEGER)```
+		CREATE TABLE queue(root TEXT,relpath TEXT, bucket TEXT, action TEXT , status TEXT,hashcode TEXT,retries INTEGER)
 		
  * 在程序根目录下运行，两种方式，一种为命令行直接运行，一种为后台守护进程:
 	* 命令行直接运行方法为
-		```python ossync.py```
+		python ossync.py
 	* 守护进程的方式为
-		```nohup python ossync.py >/dev/null 2>&1 &```
+		nohup python ossync.py >/dev/null 2>&1 &
  		
 注：请查看logs目录下的日志文件以了解系统运行状况。
