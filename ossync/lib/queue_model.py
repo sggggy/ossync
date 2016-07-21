@@ -20,9 +20,10 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 # THE SOFTWARE.
 
-import sqlite3, md5
+import sqlite3
 import itertools
 import hashlib
+from hashlib import md5
 
 class QueueModel(object):
 	def __init__(self, dbpath):

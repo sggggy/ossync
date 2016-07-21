@@ -5,7 +5,7 @@ import hmac
 import time
 from hashlib import sha1 as sha
 import os
-import md5
+from hashlib import md5
 import StringIO
 from oss_xml_handler import *
 from threading import Thread
